@@ -2,13 +2,13 @@
 
 
 각 파일 설명
-ISO9283_gui.py : openpyxl 사용하는 gui 코드
-ISO9283_analyze.py : openpyxl 사용하는 gui 없는 버전 코드 
-ISOwings.py : xlwings 사용하는 코드
+gui.py : openpyxl 사용하는 gui 코드
+analyze.py : openpyxl 사용하는 gui 없는 버전 코드 
+ings.py : xlwings 사용하는 코드
 실행파일(exe 파일)은 xlwings 기반 제작함
 
 실행방법 (택1)
-1. ISO9283.exe 파일 실행 후 파일 선택 후 실행
+1. .exe 파일 실행 후 파일 선택 후 실행
 2. exe 답답하면 파이썬 파일에서 경로 수정 후 직접 실행
 
 실행 시 주의사항
@@ -16,14 +16,14 @@ ISOwings.py : xlwings 사용하는 코드
 	pandas, openpyxl, os 
 	gui의 경우 tkinter, sys 까지 필요
 2. csv, txt 등 읽을 수 있음, 구분자 상관 없음
-3. 파일과 같은 경로에 ISO9283_form.xlsx 파일 유지 필수
+3. 파일과 같은 경로에 form.xlsx 파일 유지 필수
 4. 파일과 같은 경로에 새로운 파일 생성
 5. 창 하단부 삭제된 데이터 출력 
 
 코드 구조
 1. reading 함수
 - 파일 읽기
-- 1460~ 데이터부터 읽기
+- 0~ 데이터부터 읽기
 
 2. preprocessing1 
 - 중복 데이터 제거하는 함수
